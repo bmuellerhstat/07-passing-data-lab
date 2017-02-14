@@ -12,12 +12,10 @@ class App < Sinatra::Base
     erb :reversed
   end
 
-  get '/friends' do
     #write your code here
       get '/friends' do
     @friends = ["Charlie Chaplin", "Richard Pryor", "Eddie Murphy", "Louis CK", "Jerry Seinfeld"]
     erb :friends
-  end
   end
 
 end
