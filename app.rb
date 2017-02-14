@@ -15,6 +15,7 @@ class App < Sinatra::Base
   get '/friends' do
     #write your code here
      @friends = ["Charlie Chaplin", "Frank Sinatra", "Jane Eyre", "Maya Angelou", "Shakespeare"]
+     erb :friends
   end
 
 end
