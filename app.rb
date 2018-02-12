@@ -1,17 +1,22 @@
 require_relative 'config/environment'
-
+#https://sites.google.com/a/hstat.org/12sep1718/ 
 class App < Sinatra::Base
 
   get '/reverse' do
     erb :reverse
   end
 
-  post '/reverse' do
+  post '/reverse' do 
+    # puts params 
+    original_string = params["string"]
+    @reversed_string = original_string.reverse
     erb :reversed
   end
 
   get '/friends' do
     #write your code here
+    @friends = ["Charlie Chaplin", "Richard Pryor", "Eddie Murphy", "Louis CK", "Jerry Seinfeld"]
+    erb :friends
   end
 
 end
