@@ -59,6 +59,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.13.2)
   capybara
   pry
   rack-test
@@ -70,4 +71,5 @@ DEPENDENCIES
   thin
 
 BUNDLED WITH
+
    1.12.5
